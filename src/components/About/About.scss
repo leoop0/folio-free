@@ -1,0 +1,82 @@
+.about-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  border-radius: 16px;
+  width: 96%;
+  max-width: 1180px;
+  z-index: 20;
+
+  .close-btn {
+    position: absolute;
+    cursor: pointer;
+    right: 24px;
+    top: 24px;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h3 {
+      font-size: var(--font-size-lg);
+      font-weight: 600;
+      color: var(--color-text-primary);
+    }
+  }
+
+  .toolbox {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+
+      .tool {
+        width: 80px;
+        p {
+          font-weight: 600;
+          font-size: var(--font-size-sm);
+          line-height: 16px;
+          color: var(--color-text-primary);
+        }
+
+        span {
+          font-weight: 400;
+          font-size: 12px;
+          //   line-height: 1px;
+          color: var(--color-text-secondary);
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    p {
+      font-size: var(--font-size-sm);
+      line-height: 22px;
+      color: var(--color-text-secondary);
+
+      .media {
+        margin-top: 12px;
+        display: flex;
+        gap: 12px;
+      }
+    }
+  }
+}

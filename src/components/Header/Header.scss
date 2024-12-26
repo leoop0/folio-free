@@ -1,0 +1,52 @@
+nav {
+  height: 60px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .logo-container,
+    .contact-container {
+      flex: 1;
+
+      .btn-primary-sm {
+        float: right;
+      }
+    }
+
+    .logo-container {
+      img {
+        width: 32px;
+      }
+    }
+
+    .nav-items {
+      display: flex;
+
+      ul {
+        display: flex;
+        gap: 40px;
+
+        li {
+          list-style: none;
+          display: flex;
+          align-items: center;
+
+          &.ico {
+            gap: 8px;
+          }
+
+          a,
+          div {
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--color-text-primary);
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
