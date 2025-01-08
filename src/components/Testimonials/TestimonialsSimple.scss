@@ -1,0 +1,75 @@
+.testimonials.simple {
+  overflow: hidden;
+
+  .container-t {
+    position: relative;
+
+    .testimonial-stack {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+
+      .testimonial-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        background-color: #fafafa;
+        border: solid 1px var(--color-stroke-muted);
+        border-radius: 12px;
+        padding: 20px;
+
+        .name {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-bottom: 4px;
+        }
+      }
+    }
+
+    .controls {
+      position: absolute;
+      bottom: 20px;
+      right: 10px;
+
+      display: flex;
+      gap: 10px;
+
+      button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        border-radius: 20px;
+
+        &:hover {
+          background-color: var(--color-text-primary);
+        }
+
+        &:first-child {
+          transform: scaleX(-1);
+        }
+      }
+    }
+
+    .indicators {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 10px;
+
+      .indicator {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ccc;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &.active {
+          background-color: #333;
+        }
+      }
+    }
+  }
+}

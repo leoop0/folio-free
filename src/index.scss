@@ -26,6 +26,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -35,21 +41,28 @@
   justify-content: center;
   .container {
     width: 96%;
-    max-width: 1920px;
+    max-width: 1425px;
+
+    &-min {
+      width: 96%;
+      max-width: 680px;
+    }
   }
 }
 
 .btn-primary {
   cursor: pointer;
   transition: all 0.3s ease;
-  background-color: var(--color-accent);
+  background-color: var(--color-text-primary);
   font-size: var(--font-size-md);
   padding: 12px 14px;
   border-radius: 10px;
   text-decoration: none;
   font-weight: 500;
-  color: var(--color-text-primary);
-  border: solid 1px rgba(0, 0, 0, 0.1);
+  color: white;
+  border: none;
+  box-shadow: 0px 0.75px 0px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px 0px rgba(0, 0, 0, 0.4),
+    0px 0px 0px 1px #18181b;
 
   &-sm {
     cursor: pointer;
@@ -58,17 +71,20 @@
     border-radius: 10px;
     text-decoration: none;
     font-weight: 500;
-    color: var(--color-text-primary);
-    border: solid 1px rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    box-shadow: 0px 0.75px 0px 0px rgba(255, 255, 255, 0.2) inset,
+      0px 1px 2px 0px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px #18181b;
     transition: all 0.3s ease;
-    background-color: var(--color-accent);
+    background-color: var(--color-text-primary);
     &:hover {
-      background-color: #f0d1ff;
+      background-color: #1a1a1a;
     }
   }
 
   &:hover {
-    background-color: #f0d1ff;
+    // transform: scale(1.05);
+    background-color: #1a1a1a;
   }
 }
 
@@ -82,11 +98,19 @@
   text-decoration: none;
   font-weight: 500;
   color: var(--color-text-primary);
-  border: transparent solid 1px;
+  border: none;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+
+  &.disabled {
+    cursor: not-allowed;
+    background-color: var(--color-stroke-primary);
+    color: var(--color-text-secondary);
+
+    pointer-events: none;
+  }
 
   &:hover {
     background-color: #f0f0f0a4;
-    border: solid 1px var(--color-stroke-primary);
   }
 }
 
@@ -95,8 +119,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5px);
-  z-index: 10;
+  z-index: 20;
 }

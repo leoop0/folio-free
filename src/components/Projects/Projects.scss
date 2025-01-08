@@ -1,0 +1,45 @@
+.my-masonry-grid {
+  display: flex;
+  margin-left: -16px; // Espacement entre les colonnes
+  width: auto;
+
+  & > .my-masonry-grid_column {
+    padding-left: 16px; // Espacement entre les colonnes
+    background-clip: padding-box;
+  }
+}
+
+.project-item {
+  margin-bottom: 16px;
+
+  .img-container {
+    position: relative;
+    overflow: hidden;
+
+    img,
+    video {
+      width: 100%;
+      border-radius: 10px;
+      border: solid 1px var(--color-stroke-primary);
+    }
+  }
+
+  p {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+  }
+
+  .btn-primary {
+    margin-top: 8px;
+    display: inline-block;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+  }
+}

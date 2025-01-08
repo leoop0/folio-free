@@ -40,16 +40,15 @@ const Testimonials = () => {
 
   // Gestion du swipe
   const handlers = useSwipeable({
-    onSwipedLeft: handleNext, // Swipe à gauche -> suivant
-    onSwipedRight: handlePrev, // Swipe à droite -> précédent
+    onSwipedLeft: handleNext,
+    onSwipedRight: handlePrev,
     preventDefaultTouchmoveEvent: true,
-    trackMouse: true, // Permet aussi de swiper avec la souris
+    trackMouse: true,
   });
 
   return (
     <div className=" wrapper testimonials" {...handlers}>
       <div className="container">
-        <h2>What my clients are saying</h2>
         <div className="testimonial-stack">
           {testimonials.map((testimonial, index) => {
             const position = (index - currentIndex + testimonials.length) % testimonials.length;
@@ -72,7 +71,7 @@ const Testimonials = () => {
           })}
         </div>
         <button className="prev-button" onClick={handlePrev}>
-          ←
+          →
         </button>
         <button className="next-button" onClick={handleNext}>
           →
@@ -86,9 +85,6 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
-      <a href="" className="btn-primary">
-        Work with me
-      </a>
     </div>
   );
 };

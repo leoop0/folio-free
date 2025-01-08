@@ -20,11 +20,11 @@ const About = ({ onClose }) => {
   const tools = [
     { img: figma, name: "Figma", description: "UI/UX Design" },
     { img: webflow, name: "Webflow", description: "Web Development" },
-    { img: framer, name: "Framer", description: "Prototyping" },
+    { img: framer, name: "Framer", description: "Web Development" },
     { img: cursor, name: "Cursor", description: "Code Editor" },
     { img: adobe, name: "Adobe", description: "Creative Suite" },
     { img: notion, name: "Notion", description: "Project Management" },
-    { img: chatgpt, name: "ChatGPT", description: "AI Assistance" },
+    { img: chatgpt, name: "ChatGPT", description: "Ideation" },
     { img: spline, name: "Spline", description: "3D Design" },
   ];
 
