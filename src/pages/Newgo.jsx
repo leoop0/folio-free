@@ -5,10 +5,38 @@ import AfterImage from "../assets/projects/clubs-after.png";
 import Buttons from "../assets/projects/buttons.png";
 import Home from "../assets/projects/home.png";
 import Retool from "../assets/projects/retool.png";
+import { Helmet } from "react-helmet-async";
+import MetaImg from "../assets/img/img.png";
 
 const Newgo = () => {
   return (
     <div className="wrapper project-page newgo">
+      <Helmet>
+        <title>Léo Frati - Product Designer & Web Developer</title>
+        <meta
+          name="description"
+          content="Welcome to the portfolio of Léo Frati, a passionate Product Designer and Web Developer based in Bordeaux. Explore my projects, from UI design to web development with React and Webflow."
+        />
+        <meta
+          name="keywords"
+          content="Léo Frati, Product Designer, Web Developer, Bordeaux, React, Webflow, Portfolio, Design Systems, UI/UX Design"
+        />
+        <meta property="og:title" content="Léo Frati - Product Designer & Web Developer" />
+        <meta
+          property="og:description"
+          content="Discover the portfolio of Léo Frati, showcasing projects in product design and web development. Let's create user-centered, impactful digital experiences."
+        />
+        <meta property="og:image" content={MetaImg} />
+        <meta property="og:url" content="https://leofrati.fr" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Léo Frati - Product Designer & Web Developer" />
+        <meta
+          name="twitter:description"
+          content="Explore my portfolio featuring UI/UX design, web development with React, and scalable design systems."
+        />
+        <meta name="twitter:image" content={MetaImg} />
+      </Helmet>
       <div className="container-min">
         <section className="title">
           <div className="logo">
