@@ -19,13 +19,13 @@ const Bento = () => {
           <div className="img-container">
             <img src={Leo} alt="Leo" />
             <div className="socials">
-              <a href="https://www.linkedin.com/in/leo-frati/" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/leofrati/" target="_blank" rel="noreferrer">
                 <img src={Linkedin} alt="Linkedin" />
               </a>
-              <a href="https://www.instagram.com/leofrati/" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/oelfrt/" target="_blank" rel="noreferrer">
                 <img src={Insta} alt="Instagram" />
               </a>
-              <a href="https://www.behance.net/leofrati" target="_blank" rel="noreferrer">
+              <a href="https://www.behance.net/lofrati2" target="_blank" rel="noreferrer">
                 <img src={Behance} alt="Behance" />
               </a>
             </div>
