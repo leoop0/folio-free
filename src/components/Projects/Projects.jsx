@@ -118,7 +118,7 @@ const Projects = () => {
   return (
     <div className="wrapper works" id="projects">
       <div className="container">
-        <h2>Autres projets</h2>
+        <h2>Other works</h2>
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="my-masonry-grid"
