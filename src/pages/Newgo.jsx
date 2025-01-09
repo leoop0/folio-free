@@ -108,7 +108,7 @@ const Newgo = () => {
           </div>
           <div className="info">
             <h6>TIMELINE</h6>
-            <p>Oct 2020 - Oct 2023</p>
+            <p>Oct 2021 - Oct 2023</p>
           </div>
         </section>
 
