@@ -59,10 +59,11 @@ const Bento = () => {
               </span>
             </h3>
             <p>
-              With years of experience in web design, I live and breathe good design and value the
-              details that matter. Say goodbye to the stressful back and forth with developers who
-              don’t have an eye for design and rely on someone who has the skills, experience, and
-              enthusiasm to bring your visions to life the way they were intended.
+              As both a designer and web developer, I understand the technical constraints that
+              developers face. This unique perspective allows me to create designs that are not only
+              visually compelling but also optimized for seamless implementation. By bridging the
+              gap between design and development, I ensure that every project is efficient,
+              achievable, and true to your vision.
             </p>
           </div>
           <div className="img-container">

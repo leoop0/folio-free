@@ -15,6 +15,7 @@ import Feel from "../../assets/works/Feel.png";
 import Cube from "../../assets/works/cube_low.mp4";
 import Meyze from "../../assets/works/Meyze.png";
 import Horror from "../../assets/works/Horror.png";
+import SNSM from "../../assets/works/snsm.png";
 
 import "./Projects.scss";
 
@@ -103,8 +104,8 @@ const Projects = () => {
     { id: 10, title: "App for a museum during lockdown", image: Feel },
     { id: 11, title: "3D Cube created and animated with Blender", video: Cube },
     { id: 12, title: "Physics app for students", image: Meyze },
-    { id: 13, title: "E-commerce Horror Vacui Redesign", image: Horror },
-    { id: 13, title: "E-commerce Horror Vacui Redesign", image: Horror },
+    { id: 13, title: "Game for SNSM", image: SNSM },
+    { id: 14, title: "E-commerce Horror Vacui Redesign", image: Horror },
   ];
 
   const breakpointColumnsObj = {

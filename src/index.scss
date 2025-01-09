@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@font-face {
+  font-family: "PP NeueBit";
+  src: url("./assets/fonts/PPNeueBit-Bold.woff2") format("woff2"),
+    url("./assets/fonts/PPNeueBit-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --font-size-xl: 1.625rem; /* 26px ÷ 16px */
   --font-size-lg: 1.125rem; /* 18px ÷ 16px */

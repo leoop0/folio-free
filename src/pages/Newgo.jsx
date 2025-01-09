@@ -1,4 +1,10 @@
 import Logo from "../assets/projects/newgo-logo.svg";
+import ReactCompareImage from "react-compare-image";
+import BeforeImage from "../assets/projects/clubs-before.png";
+import AfterImage from "../assets/projects/clubs-after.png";
+import Buttons from "../assets/projects/buttons.png";
+import Home from "../assets/projects/home.png";
+import Retool from "../assets/projects/retool.png";
 
 const Newgo = () => {
   return (
@@ -63,14 +69,14 @@ const Newgo = () => {
             <p>Product Designer</p>
           </div>
           <div className="info">
-            <h6>TOOLS</h6>
-            <p>FIGMA</p>
-            <p>REACT</p>
+            <h6>MAIN TOOLS</h6>
+            <p>Figma</p>
+            <p>React</p>
           </div>
           <div className="info">
-            <h6>PROJECT</h6>
-            <p>dsfsd</p>
-            <p>Product Designer</p>
+            <h6>PROCESS</h6>
+            <p>User-centric Design</p>
+            <p>Iterative Design</p>
           </div>
           <div className="info">
             <h6>TIMELINE</h6>
@@ -94,6 +100,7 @@ const Newgo = () => {
               relevance, designing intuitive interfaces, and engaging with users directly to
               understand their needs, pain points, and overall goals.
             </p>
+            <img src={Home} alt="" />
           </div>
 
           <div className="part">
@@ -144,6 +151,12 @@ const Newgo = () => {
               consistency. This system served as a reference for both the design and development
               teams, allowing us to ensure that each new component aligned with our central vision.
             </p>
+            <ReactCompareImage
+              leftImage={BeforeImage}
+              rightImage={AfterImage}
+              sliderLineColor="#FFFFFF" // Ligne de séparation personnalisée
+              sliderLineWidth={3} // Largeur de la ligne
+            />
           </div>
 
           <div className="part">
@@ -158,6 +171,18 @@ const Newgo = () => {
           </div>
 
           <div className="part">
+            <h2>Optimizing Development Workflows (Retool)</h2>
+            <p>
+              In our quest for efficiency and rapid feature delivery, we also explored tools like
+              Retool to streamline app development. While we ultimately decided not to use it for
+              this project, experimenting with Retool gave us valuable insights into its potential
+              for speeding up internal processes. It remains a tool we keep in mind for future use,
+              especially for building internal tools or rapidly prototyping features.
+            </p>
+            <img src={Retool} alt="" />
+          </div>
+
+          <div className="part">
             <h2>Technical & Functional Constraints</h2>
             <p>
               While the application itself was not technically complex, we decided to refactor the
@@ -165,6 +190,7 @@ const Newgo = () => {
               rebuilt from scratch, we avoided legacy constraints and designed both the product and
               codebase around a clear, central concept.
             </p>
+            <img src={Buttons} alt="" />
           </div>
 
           <div className="part">

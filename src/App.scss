@@ -239,6 +239,7 @@ video {
 
 .wrapper.project-page {
   padding-top: 120px;
+  background-color: #fafafa;
 
   .logo {
     margin-bottom: 16px;
@@ -249,6 +250,8 @@ video {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
 
       .btn-primary-sm {
         display: flex;
@@ -280,7 +283,9 @@ video {
 
   .infos-project {
     display: flex;
+    flex-wrap: wrap;
     padding: 24px;
+    gap: 24px;
     border-radius: 12px;
     background: var(--White-BG, #fff);
     justify-content: space-between;
@@ -312,6 +317,12 @@ video {
       display: flex;
       flex-direction: column;
       gap: 16px;
+
+      img {
+        border-radius: 16px;
+        border: solid 1px var(--color-stroke-muted);
+      }
+
       h2 {
         font-size: 18px;
         font-weight: 600;
@@ -361,4 +372,11 @@ video {
       }
     }
   }
+
+  // .wrapper.project-page {
+  //   .infos-project {
+  //     flex-direction: wr;
+  //     gap: 16px;
+  //   }
+  // }
 }

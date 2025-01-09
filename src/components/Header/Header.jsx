@@ -35,13 +35,13 @@ const Header = () => {
           <div className="nav-items">
             <ul>
               <li>
-                <a href="#study-cases">Study Cases</a>
+                <a href="/#study-cases">Study Cases</a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="/#about">About</a>
               </li>
               <li>
-                <a href="#projects">Works</a>
+                <a href="/#projects">Works</a>
               </li>
 
               <li className="ico">

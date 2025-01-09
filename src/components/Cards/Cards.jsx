@@ -6,6 +6,8 @@ import Halto from "../../assets/projects/thumbnail-halto.png";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 
+import Drag from "../../assets/img/drag.svg";
+
 const Cards = () => {
   const bounceTransition = {
     type: "spring",
@@ -18,6 +20,7 @@ const Cards = () => {
   return (
     <div className="wrapper cards">
       <div className="container">
+        <img className="drag" src={Drag} alt="" />
         <div className="cards-container">
           <motion.div
             className="card"
@@ -36,7 +39,7 @@ const Cards = () => {
                 <p>Branding, Web Design</p>
               </div>
               <div className="btn-container">
-                <button className="btn-secondary disabled">RIn progress</button>
+                <button className="btn-secondary disabled">In progress</button>
               </div>
             </div>
           </motion.div>

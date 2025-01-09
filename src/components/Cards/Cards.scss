@@ -6,6 +6,12 @@
     min-height: 600px;
     background: url(../../assets/img/bg.svg) no-repeat center center/cover;
 
+    .drag {
+      position: absolute;
+      right: 5%;
+      top: 5%;
+    }
+
     .cards-container {
       width: 100%;
 
