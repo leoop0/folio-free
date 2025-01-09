@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container">
         <p>Made with 💖️ by Léo Frati</p>
         <p>Folio ✦ 2024</p>
-        <a href="">Legal Notice</a>
+        <a href="/">Legal Notice</a>
       </div>
     </footer>
   );

@@ -3,6 +3,8 @@ import "./Header.scss";
 import { ReactComponent as Download } from "../../assets/ico/download.svg";
 import About from "../About/About";
 
+import Resume from "../../assets/Resume.pdf";
+
 import Logo from "../../assets/img/logo.png";
 
 const Header = () => {
@@ -46,7 +48,9 @@ const Header = () => {
 
               <li className="ico">
                 <Download />
-                <a href="/">Resume</a>
+                <a href={Resume} target="_blank" rel="noopener noreferrer">
+                  Resume
+                </a>
               </li>
             </ul>
           </div>
