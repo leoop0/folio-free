@@ -28,8 +28,8 @@ const Projects = () => {
     if (!isMobile) {
       document.body.style.overflow = "hidden"; // Désactiver le scroll
       document.documentElement.style.overflow = "hidden"; // Désactiver le scroll
+      setLightbox({ isOpen: true, images, currentIndex: index });
     }
-    setLightbox({ isOpen: true, images, currentIndex: index });
   };
 
   const closeLightbox = () => {
@@ -58,8 +58,8 @@ const Projects = () => {
     if (!isMobile) {
       document.body.style.overflow = "hidden"; // Désactiver le scroll
       document.documentElement.style.overflow = "hidden"; // Désactiver le scroll
+      setVideoLightbox({ isOpen: true, videoSrc });
     }
-    setVideoLightbox({ isOpen: true, videoSrc });
   };
 
   const closeVideoLightbox = () => {
@@ -117,7 +117,7 @@ const Projects = () => {
   return (
     <div className="wrapper works" id="projects">
       <div className="container">
-        <h2>Other projects</h2>
+        <h2>Autres projets</h2>
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="my-masonry-grid"
@@ -151,7 +151,7 @@ const Projects = () => {
                 )}
                 {item.link && (
                   <a href={item.link} target="_blank" rel="noreferrer">
-                    <button className="btn-primary">View Project</button>
+                    <button className="btn-primary">Voir le projet</button>
                   </a>
                 )}
               </div>

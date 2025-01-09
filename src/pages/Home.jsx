@@ -85,7 +85,7 @@ const Home = () => {
           </h1>
 
           <div className="btn-container">
-            <a href="" className="btn-primary">
+            <a href="mailto:fratileo@gmail.com" className="btn-primary">
               Work with me
             </a>
             <a href="#about">
