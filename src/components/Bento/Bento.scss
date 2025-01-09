@@ -207,6 +207,11 @@
         }
       }
     }
+    .div4 {
+      .map .map-container {
+        height: 260px !important;
+      }
+    }
   }
 
   @media screen and (max-width: 660px) {
