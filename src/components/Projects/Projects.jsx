@@ -9,7 +9,7 @@ import Betnow from "../../assets/works/Betnow.png";
 import WWF from "../../assets/works/WWF.png";
 import Metro from "../../assets/works/Metro.png";
 import Sonigiri from "../../assets/works/Sonigiri.png";
-import PasMoi from "../../assets/works/pasmoi.png";
+// import PasMoi from "../../assets/works/pasmoi.png";
 import Choffee from "../../assets/works/Choffee.png";
 import Feel from "../../assets/works/Feel.png";
 import Cube from "../../assets/works/cube_low.mp4";
@@ -99,12 +99,13 @@ const Projects = () => {
       image: Sonigiri,
       link: "https://www.behance.net/gallery/186958185/Rebranding-Sonigiri",
     },
-    { id: 8, title: "PasMoi", image: PasMoi },
+    // { id: 8, title: "PasMoi", image: PasMoi },
+    { id: 8, title: "Game for SNSM", image: SNSM },
     { id: 9, title: "Design of a chicory packaging", image: Choffee },
     { id: 10, title: "App for a museum during lockdown", image: Feel },
     { id: 11, title: "3D Cube created and animated with Blender", video: Cube },
     { id: 12, title: "Physics app for students", image: Meyze },
-    { id: 13, title: "Game for SNSM", image: SNSM },
+
     { id: 14, title: "E-commerce Horror Vacui Redesign", image: Horror },
   ];
 
