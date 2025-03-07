@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Masonry from "react-masonry-css";
 import { useMediaQuery } from "react-responsive";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import Aria from "../../assets/works/aria.jpg";
 import Betnow from "../../assets/works/betnow.jpg";
@@ -130,7 +131,7 @@ const Projects = () => {
   return (
     <div className="wrapper works" id="projects">
       <div className="container-lg">
-        <h2>Other works</h2>
+        <h2>Autres travaux</h2>
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="my-masonry-grid"
@@ -140,7 +141,7 @@ const Projects = () => {
             <div className="project-item" key={item.id}>
               <div className="img-container">
                 {item.image && (
-                  <img
+                  <LazyLoadImage
                     src={item.image}
                     alt={item.title}
                     onClick={() =>
@@ -178,7 +179,7 @@ const Projects = () => {
         <>
           <div className="lightbox-overlay" onClick={closeLightbox}></div>
           <div className="lightbox">
-            <img
+            <LazyLoadImage
               className="lightbox-image"
               src={lightbox.images[lightbox.currentIndex]}
               alt="Lightbox"

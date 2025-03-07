@@ -10,6 +10,7 @@ import { useMediaQuery } from "react-responsive";
 import { ReactComponent as Download } from "../../assets/ico/download.svg";
 
 import Drag from "../../assets/img/drag.svg";
+import { ReactComponent as Go } from "../../assets/img/go.svg";
 import Map from "../Map/Map";
 
 // Import des images
@@ -76,13 +77,13 @@ const Cards = () => {
                 <h3>Léo Frati - 24 yo</h3>
                 <div className="social">
                   {" "}
-                  <a href="">
+                  <a href="https://www.linkedin.com/in/leofrati/" target="_blank" rel="noreferrer">
                     <Linkedin />
                   </a>
-                  <a href="">
+                  <a href="https://www.instagram.com/oelfrt/" target="_blank" rel="noreferrer">
                     <Insta />
                   </a>
-                  <a href="">
+                  <a href="https://www.behance.net/lofrati2" target="_blank" rel="noreferrer">
                     <Behance />
                   </a>
                 </div>
@@ -169,6 +170,7 @@ const Cards = () => {
           </p>
           <p>I’m also a big mountain lover 🏔️.</p>
         </div>
+        <Go className="go-arrow" />
       </div>
     </div>
   );

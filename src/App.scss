@@ -232,7 +232,7 @@
 }
 
 .wrapper.works {
-  padding: 120px 0px;
+  padding-bottom: 120px;
   .container {
     h2 {
       font-size: var(--font-size-lg);
@@ -338,6 +338,20 @@
         background-color: rgba(0, 0, 0, 0.8);
         border: solid 1px rgba(255, 255, 255, 0.5);
       }
+    }
+  }
+}
+
+#about {
+  .go-arrow {
+    position: absolute;
+    bottom: -140px;
+    right: 50px;
+  }
+
+  @media screen and (max-width: 860px) {
+    .go-arrow {
+      display: none;
     }
   }
 }
