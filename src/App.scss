@@ -4,55 +4,58 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    min-height: 580px;
+    min-height: 480px;
     gap: 22px;
 
     h1 {
       font-size: var(--font-size-xl);
       position: relative;
       z-index: 10;
-      text-align: center;
       font-weight: 500;
       max-width: 660px;
       line-height: 34px;
 
       span {
-        // background: linear-gradient(90deg, #7000ff 0%, #ff4f4f 100%);
-        // background-clip: text;
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
-        font-family: "PP NeueBit";
-        font-size: 40px;
-      }
-    }
+        padding: 0 2px;
+        position: relative;
 
-    .right-shape {
-      position: absolute;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0%;
+          height: 100%;
+          background-color: rgba(13, 154, 255, 0.2);
+          border: solid 1px #0d99ff;
+          z-index: -1;
+          animation: widthAnimation 0.8s ease forwards;
+        }
 
-      right: -3%;
-      top: 25%;
-      transform: translateY(-50%) scale(1.2) scaleX(-1);
-    }
+        @keyframes widthAnimation {
+          from {
+            width: 0%;
+          }
+          to {
+            width: 100%;
+          }
+        }
 
-    .left-shape {
-      position: absolute;
-      left: -8%;
-      top: 25%;
-    }
+        .arrow {
+          position: absolute;
+          bottom: -30px;
+          right: 0px;
+          animation: followBefore 0.8s ease forwards;
+        }
 
-    .shape {
-      position: absolute;
-
-      &.left {
-        left: -10%;
-        top: 25%;
-      }
-
-      &.right {
-        right: -5%;
-        top: 25%;
-        transform: translateY(-50%);
+        @keyframes followBefore {
+          from {
+            right: 90%;
+          }
+          to {
+            right: -30px;
+          }
+        }
       }
     }
 
@@ -83,6 +86,129 @@
   }
 }
 
+.cs {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    .project-card {
+      transition: all 0.3s ease;
+      text-decoration: none;
+      background-color: #fafafa;
+      border-radius: 12px;
+      box-shadow: 0px 0px 0px 1px rgba(17, 24, 28, 0.08), 0px 1px 2px -1px rgba(17, 24, 28, 0.08),
+        0px 2px 4px 0px rgba(17, 24, 28, 0.04);
+      overflow: hidden;
+
+      .content {
+        padding: 32px;
+
+        .title {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+
+        h2 {
+          color: #262f3f;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 140%;
+        }
+
+        p {
+          color: #777;
+
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 140%;
+        }
+      }
+
+      .img {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 120px;
+
+        padding-bottom: -80px;
+        max-height: 180px;
+        img {
+          width: 100%;
+          border-radius: 12px;
+          border: 5px solid #fff;
+          box-shadow: 0px 0px 27.7px 1px rgba(17, 24, 28, 0.08),
+            0px 1px 2px -1px rgba(17, 24, 28, 0.08), 0px 2px 4px 0px rgba(17, 24, 28, 0.04);
+        }
+        &.newgo {
+          margin-right: 120px;
+          margin-top: 140px;
+          width: auto;
+          img {
+            transition: all 0.3s ease;
+            height: 380px;
+            width: auto;
+            &:first-child {
+              transform: rotate(-6deg);
+              z-index: 1;
+            }
+            &:last-child {
+              transform: rotate(6deg);
+            }
+          }
+        }
+
+        &.halto {
+          margin-right: 100px;
+
+          img {
+            transition: all 0.3s ease;
+            height: 380px;
+            width: auto;
+            &:first-child {
+              transform: rotate(-6deg);
+            }
+            &:last-child {
+              transform: rotate(6deg);
+
+              z-index: 1;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        box-shadow: 0px 0px 25.8px 6px rgba(17, 24, 28, 0.08),
+          0px 1px 2px -1px rgba(17, 24, 28, 0.08), 0px 2px 4px 0px rgba(17, 24, 28, 0.04);
+        .newgo {
+          img {
+            &:first-child {
+              transform: rotate(-5deg) scale(1.1);
+              z-index: 1;
+            }
+            &:last-child {
+              transform: rotate(5deg) scale(1.1);
+            }
+          }
+        }
+        .halto {
+          img {
+            &:first-child {
+              transform: rotate(-5deg) scale(1.1);
+              z-index: 1;
+            }
+            &:last-child {
+              transform: rotate(5deg) scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .wrapper.projects {
   .container {
     h2 {
@@ -106,8 +232,7 @@
 }
 
 .wrapper.works {
-  background-color: #fafafa;
-  padding-top: 120px;
+  padding: 120px 0px;
   .container {
     h2 {
       font-size: var(--font-size-lg);
@@ -239,10 +364,14 @@ video {
 
 .wrapper.project-page {
   padding-top: 120px;
-  background-color: #fafafa;
+  // background-color: #fafafa;
 
   .logo {
     margin-bottom: 16px;
+    img {
+      width: 48px;
+      height: 48px;
+    }
   }
 
   .title {
@@ -261,10 +390,10 @@ video {
 
       .txt {
         h1 {
-          font-family: "PP NeueBit";
-          font-size: 36px;
+          font-size: 28px;
           color: var(--color-text-primary);
           margin-bottom: 8px;
+          font-weight: 500;
         }
         h3 {
           color: var(--color-text-secondary);
@@ -318,6 +447,15 @@ video {
       flex-direction: column;
       gap: 16px;
 
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        img {
+          width: 100%;
+        }
+      }
+
       img {
         border-radius: 16px;
         border: solid 1px var(--color-stroke-muted);
@@ -362,8 +500,13 @@ video {
       h1 {
         font-size: 22px;
         line-height: 28px;
+
         span {
-          font-size: 32px;
+          &:before {
+            display: none;
+          }
+          background-color: rgba(13, 154, 255, 0.2);
+          border: solid 1px #0d99ff;
         }
       }
 
@@ -379,4 +522,20 @@ video {
   //     gap: 16px;
   //   }
   // }
+}
+
+@media screen and (max-width: 512px) {
+  .cs .container .project-card {
+    .img {
+      margin: 0 !important;
+      img {
+        transform: rotate(0) !important;
+        width: 90% !important;
+        height: auto !important;
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
 }

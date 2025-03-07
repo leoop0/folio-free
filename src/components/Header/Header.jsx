@@ -34,31 +34,33 @@ const Header = () => {
             <img src={Logo} alt="Logo" />
           </a>
 
-          <div className="nav-items">
-            <ul>
-              <li>
-                <a href="/#study-cases">Study Cases</a>
-              </li>
-              <li>
-                <a href="/#about">About</a>
-              </li>
-              <li>
-                <a href="/#projects">Works</a>
-              </li>
+          <div className="nav-btn">
+            <div className="nav-items">
+              <ul>
+                <li>
+                  <a href="/#cases-study">Cases Study</a>
+                </li>
+                <li>
+                  <a href="/#about">About</a>
+                </li>
+                <li>
+                  <a href="/#projects">Works</a>
+                </li>
 
-              <li className="ico">
-                <Download />
-                <a href={Resume} target="_blank" rel="noopener noreferrer">
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </div>
+                <li className="ico">
+                  <Download />
+                  <a href={Resume} target="_blank" rel="noopener noreferrer">
+                    Resume
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-          <div className="contact-container">
-            <a href="mailto:fratileo@gmail.com" className="btn-primary-sm">
-              Get in touch
-            </a>
+            <div className="contact-container">
+              <a href="mailto:fratileo@gmail.com" className="btn-primary-sm">
+                Get in touch
+              </a>
+            </div>
           </div>
         </div>
       </nav>

@@ -2,20 +2,25 @@ import React, { useState } from "react";
 import Masonry from "react-masonry-css";
 import { useMediaQuery } from "react-responsive";
 
-import Halto from "../../assets/works/Halto.png";
-import Isulia from "../../assets/works/Isulia.png";
-import Olympus from "../../assets/works/Olympus.png";
-import Betnow from "../../assets/works/Betnow.png";
-import WWF from "../../assets/works/WWF.png";
-import Metro from "../../assets/works/Metro.png";
-import Sonigiri from "../../assets/works/Sonigiri.png";
-// import PasMoi from "../../assets/works/pasmoi.png";
-import Choffee from "../../assets/works/Choffee.png";
-import Feel from "../../assets/works/Feel.png";
+import Aria from "../../assets/works/aria.jpg";
+import Betnow from "../../assets/works/betnow.jpg";
+import Bimobox from "../../assets/works/bimobox.jpg";
+import Choffee from "../../assets/works/choffee.jpg";
+import Choffee1 from "../../assets/works/choffee-1.jpg";
+import Feel from "../../assets/works/feel.jpg";
+import Hexacup from "../../assets/works/hexa.jpg";
+import Horror from "../../assets/works/horror.jpg";
+import Metro from "../../assets/works/metro.jpg";
+import Meyze from "../../assets/works/meyze.jpg";
+import Olympus from "../../assets/works/olympus.jpg";
+import Olympus1 from "../../assets/works/olympus-1.jpg";
+import Sonigiri from "../../assets/works/sonigiri.jpg";
+import WWF from "../../assets/works/wwf.jpg";
+import Isulia from "../../assets/works/isulia.jpg";
+import Isulia1 from "../../assets/works/isulia-1.jpg";
+import Koino from "../../assets/works/koino.jpg";
+import Koino1 from "../../assets/works/koino-1.jpg";
 import Cube from "../../assets/works/cube_low.mp4";
-import Meyze from "../../assets/works/Meyze.png";
-import Horror from "../../assets/works/Horror.png";
-import SNSM from "../../assets/works/snsm.png";
 
 import "./Projects.scss";
 
@@ -71,42 +76,49 @@ const Projects = () => {
   };
 
   const items = [
-    { id: 1, title: "A online 1v1 Space Shooter", image: Halto, link: "https://haltogame.com/" },
-    { id: 2, title: "Metro poster created with data", image: Metro },
+    { id: 1, title: "B2B landing page", image: Koino },
+    { id: 2, title: "Design of a chicory packaging", image: Choffee },
     {
       id: 3,
-      title: "Greek Mythology cards game",
-      image: Olympus,
-      link: "https://www.behance.net/gallery/201015257/Olympus-Jeu-de-cartes-mtyhologique",
-    },
-    { id: 4, title: "New app for Betclic", image: Betnow },
-    {
-      id: 5,
-      title: "Website for WWF",
-      image: WWF,
-      link: "https://www.behance.net/gallery/140315317/WWF-Data-For-Change",
-    },
-
-    {
-      id: 6,
       title: "An app to find your friends at festivals",
       image: Isulia,
       link: "https://www.behance.net/gallery/194730945/ESPLORA-UIUX-Design",
     },
+    { id: 4, title: "Alternate view of Koino", image: Koino1 },
+    { id: 4.5, title: "B2B SaaS Landing Page", image: Bimobox },
+    { id: 5, title: "App for a museum during lockdown", image: Feel },
+    { id: 6, title: "3D Cube created and animated with Blender", video: Cube },
     {
       id: 7,
+      title: "Alternate view of Olympus game",
+      image: Olympus1,
+    },
+    { id: 8, title: "Landing for a football app", image: Hexacup },
+    { id: 9, title: "Metro poster created with data", image: Metro },
+    {
+      id: 10,
+      title: "Greek Mythology cards game",
+      image: Olympus,
+      link: "https://www.behance.net/gallery/201015257/Olympus-Jeu-de-cartes-mtyhologique",
+    },
+    {
+      id: 11,
       title: "Rebranding for Sonigiri",
       image: Sonigiri,
       link: "https://www.behance.net/gallery/186958185/Rebranding-Sonigiri",
     },
-    // { id: 8, title: "PasMoi", image: PasMoi },
-    { id: 8, title: "Game for SNSM", image: SNSM },
-    { id: 9, title: "Design of a chicory packaging", image: Choffee },
-    { id: 10, title: "App for a museum during lockdown", image: Feel },
-    { id: 11, title: "3D Cube created and animated with Blender", video: Cube },
-    { id: 12, title: "Physics app for students", image: Meyze },
-
-    { id: 14, title: "E-commerce Horror Vacui Redesign", image: Horror },
+    { id: 12, title: "New app for Betclic", image: Betnow },
+    { id: 13, title: "Website for a concierge service", image: Aria },
+    { id: 14, title: "Alternate view of Choffee packaging", image: Choffee1 },
+    { id: 15, title: "Physics app for students", image: Meyze },
+    { id: 16, title: "Alternate view of Isulia app", image: Isulia1 },
+    {
+      id: 17,
+      title: "Website for WWF",
+      image: WWF,
+      link: "https://www.behance.net/gallery/140315317/WWF-Data-For-Change",
+    },
+    { id: 18, title: "E-commerce Horror Vacui Redesign", image: Horror },
   ];
 
   const breakpointColumnsObj = {
@@ -117,7 +129,7 @@ const Projects = () => {
 
   return (
     <div className="wrapper works" id="projects">
-      <div className="container">
+      <div className="container-lg">
         <h2>Other works</h2>
         <Masonry
           breakpointCols={breakpointColumnsObj}
