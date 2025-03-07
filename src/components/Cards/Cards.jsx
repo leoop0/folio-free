@@ -13,14 +13,18 @@ import Drag from "../../assets/img/drag.svg";
 import Map from "../Map/Map";
 
 // Import des images
-import adobe from "../../assets/img/adobe.png";
+import blender from "../../assets/img/blender.png";
 import chatgpt from "../../assets/img/chatgpt.png";
 import cursor from "../../assets/img/cursor.png";
 import figma from "../../assets/img/figma.png";
 import framer from "../../assets/img/framer.png";
+import hotjar from "../../assets/img/hotjar.png";
+import linear from "../../assets/img/linear.png";
 import notion from "../../assets/img/notion.png";
+import slack from "../../assets/img/slack.png";
 import spline from "../../assets/img/spline.png";
 import webflow from "../../assets/img/webflow.png";
+import wordpress from "../../assets/img/wordpress.png";
 
 import { ReactComponent as Linkedin } from "../../assets/ico/lk.svg";
 import { ReactComponent as Insta } from "../../assets/ico/insta.svg";
@@ -35,17 +39,17 @@ const Cards = () => {
 
   const tools = [
     { img: figma, name: "Figma" },
-    { img: webflow, name: "Webflow" },
-    { img: framer, name: "Framer" },
-    { img: cursor, name: "Cursor" },
-    { img: adobe, name: "Adobe" },
     { img: notion, name: "Notion" },
+    { img: linear, name: "Linear" },
+    { img: cursor, name: "Cursor" },
+    { img: framer, name: "Framer" },
+    { img: webflow, name: "Webflow" },
+    { img: wordpress, name: "WordPress" },
     { img: chatgpt, name: "ChatGPT" },
+    { img: hotjar, name: "Hotjar" },
+    { img: slack, name: "Slack" },
     { img: spline, name: "Spline" },
-    { img: spline, name: "Spline" },
-    { img: spline, name: "Spline" },
-    { img: spline, name: "Spline" },
-    { img: spline, name: "Spline" },
+    { img: blender, name: "Blender" },
   ];
 
   const isMobile = useMediaQuery({ query: "(max-width: 660px)" });
@@ -99,7 +103,10 @@ const Cards = () => {
             <div className="card-content">
               <div className="text">
                 <h3>My passion</h3>
-                <p>Always trying to go higher.</p>
+                <p>
+                  I've been climbing for many years. In bouldering, lead, deep water... It's a
+                  driving force and a source of challenge :)
+                </p>
               </div>
             </div>
           </motion.div>
