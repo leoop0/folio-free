@@ -52,9 +52,10 @@ const Home = () => {
       <div className="wrapper hero">
         <div className="container">
           <h1>
-            Hi, I'm Leo 👋 <br />A designer based in Bordeaux who helps digital founders create{" "}
+            Hi, I'm Leo 👋 <br />
+            Creating unique, seamless & intuitive experiences, always designed
             <span>
-              unique, empathetic product experiences.
+              with and for users.
               <Arrow className="arrow" />
             </span>
           </h1>
