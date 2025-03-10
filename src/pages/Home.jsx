@@ -53,9 +53,9 @@ const Home = () => {
         <div className="container">
           <h1>
             Hi, I'm Leo 👋 <br />
-            Designer in Bordeaux creating unique, seamless & intuitive experiences, always designed
+            Designer in Bordeaux creating unique, seamless & intuitive experiences, always
             <span>
-              with and for users.
+              designed with and for users.
               <Arrow className="arrow" />
             </span>
           </h1>
