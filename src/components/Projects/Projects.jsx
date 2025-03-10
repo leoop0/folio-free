@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Masonry from "react-masonry-css";
 import { useMediaQuery } from "react-responsive";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { motion } from "framer-motion";
 
 import Aria from "../../assets/works/aria.jpg";
 import Betnow from "../../assets/works/betnow.jpg";
@@ -138,7 +139,14 @@ const Projects = () => {
           columnClassName="my-masonry-grid_column"
         >
           {items.map((item) => (
-            <div className="project-item" key={item.id}>
+            <motion.div
+              className="project-item"
+              key={item.id}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
               <div className="img-container">
                 {item.image && (
                   <LazyLoadImage
@@ -170,7 +178,7 @@ const Projects = () => {
                 )}
               </div>
               <p>{item.title}</p>
-            </div>
+            </motion.div>
           ))}
         </Masonry>
       </div>
@@ -224,7 +232,7 @@ const Projects = () => {
         </>
       )}
 
-      {videoLightbox.isOpen && (
+      {/* {videoLightbox.isOpen && (
         <>
           <div className="lightbox-overlay" onClick={closeVideoLightbox}></div>
           <div className="lightbox">
@@ -234,7 +242,7 @@ const Projects = () => {
             </video>
           </div>
         </>
-      )}
+      )} */}
     </div>
   );
 };

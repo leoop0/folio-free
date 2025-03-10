@@ -42,6 +42,7 @@
       }
 
       .card {
+        will-change: transform;
         position: absolute;
         border-radius: 18px;
         display: flex;

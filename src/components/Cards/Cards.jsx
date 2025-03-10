@@ -1,16 +1,19 @@
-import React from "react";
+import { React, useRef } from "react";
 import "./Cards.scss";
-import Tobi from "../../assets/projects/thumbnail-tobi.png";
-import Me from "../../assets/img/me.png";
-import Climb from "../../assets/img/climb.png";
-import Halto from "../../assets/projects/thumbnail-halto.png";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 
-import { ReactComponent as Download } from "../../assets/ico/download.svg";
+import Me from "../../assets/img/me.png";
+import Climb from "../../assets/img/climb.png";
 
-import Drag from "../../assets/img/drag.svg";
+// SVG
 import { ReactComponent as Go } from "../../assets/img/go.svg";
+import { ReactComponent as Linkedin } from "../../assets/ico/lk.svg";
+import { ReactComponent as Insta } from "../../assets/ico/insta.svg";
+import { ReactComponent as Behance } from "../../assets/ico/behance.svg";
+import Drag from "../../assets/img/drag.svg";
+
+// Components
 import Map from "../Map/Map";
 
 // Import des images
@@ -26,10 +29,6 @@ import slack from "../../assets/img/slack.png";
 import spline from "../../assets/img/spline.png";
 import webflow from "../../assets/img/webflow.png";
 import wordpress from "../../assets/img/wordpress.png";
-
-import { ReactComponent as Linkedin } from "../../assets/ico/lk.svg";
-import { ReactComponent as Insta } from "../../assets/ico/insta.svg";
-import { ReactComponent as Behance } from "../../assets/ico/behance.svg";
 
 const Cards = () => {
   const bounceTransition = {
@@ -55,19 +54,24 @@ const Cards = () => {
 
   const isMobile = useMediaQuery({ query: "(max-width: 660px)" });
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-25% 0px" });
+
   return (
     <div className="wrapper cards">
       <div className="container">
         <h2>About me</h2>
         <img className="drag" src={Drag} alt="" />
-        <div className="cards-container">
+        <div className="cards-container" ref={ref}>
           <motion.div
             className="card"
             drag={!isMobile}
             dragMomentum={false}
             dragTransition={{ timeConstant: 1000, power: 0.1 }}
             initial={{ scale: 0.8, x: isMobile ? "0%" : "-50%", opacity: 0, rotate: 0 }}
-            animate={{ scale: 1, x: isMobile ? "0%" : "-50%", opacity: 1, rotate: -2 }}
+            animate={
+              isInView ? { scale: 1, x: isMobile ? "0%" : "-50%", opacity: 1, rotate: -2 } : {}
+            }
             whileHover={{ scale: 1.05, rotate: 0 }}
             transition={bounceTransition}
           >
@@ -96,7 +100,9 @@ const Cards = () => {
             dragMomentum={false}
             dragTransition={{ timeConstant: 1000, power: 0.1 }}
             initial={{ scale: 0.8, x: isMobile ? "0%" : "-50%", opacity: 0, rotate: 0 }}
-            animate={{ scale: 1, x: isMobile ? "0%" : "-50%", opacity: 1, rotate: 0 }}
+            animate={
+              isInView ? { scale: 1, x: isMobile ? "0%" : "-50%", opacity: 1, rotate: 0 } : {}
+            }
             whileHover={{ scale: 1.05, rotate: 0 }}
             transition={bounceTransition}
           >
@@ -117,7 +123,9 @@ const Cards = () => {
             dragMomentum={false}
             dragTransition={{ timeConstant: 1000, power: 0.1 }}
             initial={{ scale: 0.8, x: isMobile ? "0%" : "-50%", opacity: 0, rotate: 0 }}
-            animate={{ scale: 1, x: isMobile ? "0%" : "-50%", opacity: 1, rotate: 2 }}
+            animate={
+              isInView ? { scale: 1, x: isMobile ? "0%" : "-50%", opacity: 1, rotate: 2 } : {}
+            }
             whileHover={{ scale: 1.05, rotate: 0 }}
             transition={bounceTransition}
           >
@@ -140,7 +148,9 @@ const Cards = () => {
             dragMomentum={false}
             dragTransition={{ timeConstant: 1000, power: 0.1 }}
             initial={{ scale: 0.8, x: isMobile ? "0%" : "-50%", opacity: 0, rotate: 0 }}
-            animate={{ scale: 1, x: isMobile ? "0%" : "-50%", opacity: 1, rotate: 4 }}
+            animate={
+              isInView ? { scale: 1, x: isMobile ? "0%" : "-50%", opacity: 1, rotate: 4 } : {}
+            }
             whileHover={{ scale: 1.05, rotate: 0 }}
             transition={bounceTransition}
           >
@@ -152,7 +162,12 @@ const Cards = () => {
             </div>
           </motion.div>
         </div>
-        <div className="about-content">
+        <motion.div
+          className="about-content"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <p>
             I'm a designer specializing in product design, UX & UI, based in Bordeaux 🇫🇷 🍷. I have
             start-up experience on web/SaaS digital products 🧑‍💻, with a user-centered approach.
@@ -169,7 +184,7 @@ const Cards = () => {
             CSS) 💻.
           </p>
           <p>I’m also a big mountain lover 🏔️.</p>
-        </div>
+        </motion.div>
         <Go className="go-arrow" />
       </div>
     </div>

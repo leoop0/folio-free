@@ -74,7 +74,15 @@ const Home = () => {
 
       <div id="cases-study" className="wrapper cs">
         <div className="container">
-          <a href="/newgo" id="Newgo" className="project-card">
+          <motion.a
+            href="/newgo"
+            id="Newgo"
+            className="project-card"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             <div className="content">
               <div className="title">
                 <NewgoLogo />
@@ -86,8 +94,16 @@ const Home = () => {
               <img src={Newgo2} alt="Newgo" />
               <img src={Newgo1} alt="Newgo" />
             </div>
-          </a>
-          <a href="/halto" id="Halto" className="project-card">
+          </motion.a>
+          <motion.a
+            href="/halto"
+            id="Halto"
+            className="project-card"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             <div className="content">
               <div className="title">
                 <HaltoLogo />
@@ -99,7 +115,7 @@ const Home = () => {
               <img src={Halto2} alt="Halto" />
               <img src={Halto1} alt="Halto" />
             </div>
-          </a>
+          </motion.a>
         </div>
       </div>
 
