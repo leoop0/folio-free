@@ -23,16 +23,36 @@
 
 .project-item {
   margin-bottom: 16px;
+  background-color: #fafafa;
+  box-shadow: 0px 0px 0px 1px rgba(17, 24, 28, 0.08), 0px 1px 2px -1px rgba(17, 24, 28, 0.08),
+    0px 2px 4px 0px rgba(17, 24, 28, 0.04);
+  border-radius: 10px;
+  overflow: hidden;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    width: 100%;
+  }
 
   .img-container {
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     img,
     video {
-      width: 100%;
+      margin-top: -2px;
+      width: 101%;
       border-radius: 10px;
       border: solid 1px var(--color-stroke-primary);
+      object-fit: fill;
+      image-rendering: pixelated; /* Préserve le rendu pixelisé */
+      image-rendering: crisp-edges; /* Pour d'autres navigateurs */
     }
   }
 
@@ -41,17 +61,16 @@
     color: var(--color-text-secondary);
   }
 
-  .btn-primary {
-    margin-top: 8px;
-    display: inline-block;
-    color: white;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
+  a {
     text-decoration: none;
+    font-weight: 500;
+    color: #0d99ff;
     font-size: 14px;
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    svg {
+      padding-top: 3px;
+    }
   }
 }
