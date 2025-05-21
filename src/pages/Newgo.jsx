@@ -190,11 +190,11 @@ const Newgo = () => {
           <div className="part">
             <h2>Collaboration & Teamwork</h2>
             <p>
-              Working in a small, agile team allowed close collaboration with developers and product
-              managers. A background in development helped in articulating design requirements
-              better to communicate with developers and provided them with straightforward
-              solutions. Frequent syncs, hands-on work sessions, and a lean, rapid-delivery approach
-              allowed us to iterate quickly and efficiently.
+              I worked mainly in tandem with the developer, but also the CEO, which taught me to be
+              very autonomous and prioritize efficiently. A background in development helped in
+              articulating design requirements better to communicate with developers and provided
+              them with straightforward solutions. Frequent syncs, hands-on work sessions, and a
+              lean, rapid-delivery approach allowed us to iterate quickly and efficiently.
             </p>
           </div>
 

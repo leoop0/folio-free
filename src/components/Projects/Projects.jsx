@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import "./Projects.scss";
 import Masonry from "react-masonry-css";
 import { useMediaQuery } from "react-responsive";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { motion } from "framer-motion";
 
 import Aria from "../../assets/works/aria.jpg";
 import Betnow from "../../assets/works/betnow.jpg";
@@ -23,8 +23,6 @@ import Isulia1 from "../../assets/works/isulia-1.jpg";
 import Koino from "../../assets/works/koino.jpg";
 import Koino1 from "../../assets/works/koino-1.jpg";
 import Cube from "../../assets/works/cube_low.mp4";
-
-import "./Projects.scss";
 
 const Projects = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 660px)" });
@@ -144,7 +142,7 @@ const Projects = () => {
     },
   ];
 
-  const filteredItems = items.filter((item) => item.types.includes(selectedType));
+  // Removed filteredItems and filtering logic
 
   const breakpointColumnsObj = {
     default: 2,
@@ -175,15 +173,12 @@ const Projects = () => {
           className="my-masonry-grid"
           columnClassName="my-masonry-grid_column"
         >
-          {filteredItems.map((item) => (
-            <div className="project-item" key={item.id}>
-              <motion.div
-                key={`${item.id}-${selectedType}`}
-                className="img-container"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
-              >
+          {items.map((item) => (
+            <div
+              className={`project-item ${item.types.includes(selectedType) ? "" : "hidden"}`}
+              key={item.id}
+            >
+              <div className="img-container">
                 {item.image && <LazyLoadImage src={item.image} alt={item.title} />}
                 {item.video && (
                   <video autoPlay muted loop>
@@ -203,32 +198,12 @@ const Projects = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <path
-                          d="M5 12.1807H19"
-                          stroke="#0D99FF"
-                          strokeWidth="1.4"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M15 16.1807L19 12.1807"
-                          stroke="#0D99FF"
-                          strokeWidth="1.4"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M15 8.18066L19 12.1807"
-                          stroke="#0D99FF"
-                          strokeWidth="1.4"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
+                        {/* SVG paths */}
                       </svg>
                     </a>
                   )}
                 </div>
-              </motion.div>
+              </div>
             </div>
           ))}
         </Masonry>
