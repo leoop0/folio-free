@@ -101,6 +101,12 @@
         0px 2px 4px 0px rgba(17, 24, 28, 0.04);
       overflow: hidden;
 
+      &.flowcam {
+        .img {
+          margin-right: 0px;
+        }
+      }
+
       .content {
         padding: 32px;
 

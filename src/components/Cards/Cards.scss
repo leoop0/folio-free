@@ -69,6 +69,10 @@
           z-index: 9;
           left: 40%;
           top: 16%;
+
+          img {
+            object-position: 0px -135px;
+          }
         }
 
         &:nth-child(3) {

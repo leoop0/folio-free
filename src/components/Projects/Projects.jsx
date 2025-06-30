@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import { motion, AnimatePresence } from "framer-motion";
 import "./Projects.scss";
 import Masonry from "react-masonry-css";
 import { useMediaQuery } from "react-responsive";
@@ -142,7 +143,8 @@ const Projects = () => {
     },
   ];
 
-  // Removed filteredItems and filtering logic
+  const filteredItems =
+    selectedType === "All" ? items : items.filter((item) => item.types.includes(selectedType));
 
   const breakpointColumnsObj = {
     default: 2,
@@ -173,11 +175,8 @@ const Projects = () => {
           className="my-masonry-grid"
           columnClassName="my-masonry-grid_column"
         >
-          {items.map((item) => (
-            <div
-              className={`project-item ${item.types.includes(selectedType) ? "" : "hidden"}`}
-              key={item.id}
-            >
+          {filteredItems.map((item) => (
+            <div className="project-item fade-in" key={item.id}>
               <div className="img-container">
                 {item.image && <LazyLoadImage src={item.image} alt={item.title} />}
                 {item.video && (

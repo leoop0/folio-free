@@ -12,6 +12,7 @@ import Projects from "../components/Projects/Projects";
 import { ReactComponent as Arrow } from "../assets/ico/arrow.svg";
 import { ReactComponent as NewgoLogo } from "../assets/img/newgo-logo.svg";
 import { ReactComponent as HaltoLogo } from "../assets/img/halto-logo.svg";
+import { ReactComponent as FlowcamLogo } from "../assets/img/flowcam-logo.svg";
 
 import MetaImg from "../assets/img/img.png";
 
@@ -19,6 +20,8 @@ import Newgo1 from "../assets/projects/newgo-1.png";
 import Newgo2 from "../assets/projects/newgo-2.png";
 import Halto1 from "../assets/projects/halto-1.png";
 import Halto2 from "../assets/projects/halto-2.png";
+import Flowcam from "../assets/projects/flowcam-1.jpg";
+import Flowcam2 from "../assets/projects/flowcam-2.jpg";
 
 const Home = () => {
   return (
@@ -93,6 +96,27 @@ const Home = () => {
             <div className="img newgo">
               <img src={Newgo2} alt="Newgo" />
               <img src={Newgo1} alt="Newgo" />
+            </div>
+          </motion.a>
+          <motion.a
+            href="/flowcam"
+            id="Flowcam"
+            className="project-card flowcam"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <div className="content">
+              <div className="title">
+                <FlowcamLogo />
+                <h2>Flowcam</h2>
+              </div>
+              <p>A low-process camera app, created with SwiftUI</p>
+            </div>
+            <div className="img newgo">
+              <img src={Flowcam2} alt="Newgo" />
+              <img src={Flowcam} alt="Newgo" />
             </div>
           </motion.a>
           <motion.a

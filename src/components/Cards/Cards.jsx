@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 
 import Me from "../../assets/img/me.png";
-import Climb from "../../assets/img/climb.png";
+import Climb from "../../assets/img/climb1.jpg";
 
 // SVG
 import { ReactComponent as Go } from "../../assets/img/go.svg";
@@ -106,7 +106,7 @@ const Cards = () => {
             whileHover={{ scale: 1.05, rotate: 0 }}
             transition={bounceTransition}
           >
-            <img src={Climb} alt="Newgo" />
+            <img src={Climb} alt="me climbing some cool stuff" />
             <div className="card-content">
               <div className="text">
                 <h3>My passion</h3>
