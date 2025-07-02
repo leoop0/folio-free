@@ -487,10 +487,41 @@ video {
         font-weight: 600;
         color: var(--color-text-primary);
       }
-      p {
+
+      li {
+        list-style: none;
+        position: relative;
+        padding-left: 12px;
+        margin-bottom: 12px;
+        &::before {
+          content: "•";
+          position: absolute;
+          left: 0;
+          margin-top: 5px;
+          top: 0;
+          color: var(--color-text-secondary);
+          font-size: 20px;
+          line-height: 1;
+        }
+      }
+
+      p,
+      li {
         font-size: 16px;
         line-height: 28px;
         color: var(--color-text-secondary);
+
+        .bold {
+          font-weight: 600;
+        }
+
+        span.code {
+          background-color: rgba(128, 128, 128, 0.207);
+          color: red;
+          font-family: "Courier New", Courier, monospace;
+          padding: 0 2px;
+          border: solid 0.5px rgba(128, 128, 128, 0.329);
+        }
       }
     }
   }
