@@ -92,7 +92,36 @@
   .container {
     display: flex;
     flex-direction: column;
+
     gap: 32px;
+
+    .dark-p {
+      display: flex;
+      width: fit-content;
+      padding: 8px 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      border: 1px solid var(--color-text-secondary);
+      margin: 0 auto;
+      p {
+        color: var(--color-text-secondary);
+        text-align: center;
+
+        a {
+          color: var(--color-text-secondary);
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        svg {
+          display: none;
+        }
+      }
+    }
+
     .project-card {
       transition: all 0.3s ease;
       text-decoration: none;

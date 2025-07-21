@@ -140,6 +140,30 @@ const Home = () => {
               <img src={Halto1} alt="Halto" />
             </div>
           </motion.a>
+          <div className="dark-p">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.57131 3.42869L8 0L11.4287 3.42869L8 6.85737L4.57131 3.42869ZM0 8L3.42869 4.57131L6.85737 8L3.42869 11.4287L0 8ZM9.14263 8L12.5713 11.4287L16 8L12.5713 4.57131L9.14263 8ZM4.57131 12.5713L8 9.14263L11.4287 12.5713L8 16L4.57131 12.5713Z"
+                fill="#65719D"
+              />
+            </svg>
+
+            <p>
+              I wrote an essay on dark patterns that you can read{" "}
+              <a href="https://dark-patterns-pi.vercel.app/" target="_blank" rel="noreferrer">
+                here
+              </a>
+              .
+            </p>
+          </div>
         </div>
       </div>
 
