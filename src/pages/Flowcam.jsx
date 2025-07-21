@@ -215,6 +215,13 @@ const Flowcam = () => {
               AltStore PAL, which simplifies installation in Europe through the DMA. This allows me
               to iterate faster without immediately investing 100 € in an Apple Developer
               subscription, while also learning more about sideloading.
+              <div className="warning">
+                <p>
+                  After some investigation, it seems that AltStore doesn't allow you to do without
+                  an Apple Developer account. Flowcam won't be available immediately, but I hope it
+                  will be soon!
+                </p>
+              </div>
             </p>
             <img src={Flowcam3} alt="Testflight & AltStore Logos" />
           </div>

@@ -20,6 +20,14 @@ function App() {
           <Route path="/flowcam" element={<Flowcam />} />
         </Routes>
       </Router>
+      <div className="gradient-blur">
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+      </div>
       <Footer />
     </div>
   );
