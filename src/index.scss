@@ -194,6 +194,7 @@ body {
   inset: auto 0 0 0;
   height: 80px;
   pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 .gradient-blur > div,
 .gradient-blur::before,
