@@ -63,6 +63,18 @@ const Home = () => {
             </span>
           </h1>
 
+          <div className="current">
+            <div className="dot">
+              <div className="dot-inner"></div>
+            </div>
+            <p>
+              Currently working as Lead Designer @{" "}
+              <a href="https://soundcharts.com/" target="_blank" rel="noreferrer">
+                Soundcharts
+              </a>
+            </p>
+          </div>
+
           <div className="btn-container">
             <a href="mailto:fratileo@gmail.com" className="btn-primary">
               Work with me
