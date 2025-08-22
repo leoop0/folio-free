@@ -4,25 +4,26 @@ import "./Projects.scss";
 import Masonry from "react-masonry-css";
 import { useMediaQuery } from "react-responsive";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
-import Aria from "../../assets/works/aria.jpg";
-import Betnow from "../../assets/works/betnow.jpg";
-import Bimobox from "../../assets/works/bimobox.jpeg";
-import Choffee from "../../assets/works/choffee.jpg";
-import Choffee1 from "../../assets/works/choffee-1.jpg";
-import Feel from "../../assets/works/feel.jpg";
-import Hexacup from "../../assets/works/hexa.jpg";
-import Horror from "../../assets/works/horror.jpg";
-import Metro from "../../assets/works/metro.jpg";
-import Meyze from "../../assets/works/meyze.jpg";
-import Olympus from "../../assets/works/olympus.jpg";
-import Olympus1 from "../../assets/works/olympus-1.jpg";
-import Sonigiri from "../../assets/works/sonigiri.jpg";
-import WWF from "../../assets/works/wwf.jpg";
-import Isulia from "../../assets/works/isulia.jpg";
-import Isulia1 from "../../assets/works/isulia-1.jpg";
-import Koino from "../../assets/works/koino.jpg";
-import Koino1 from "../../assets/works/koino-1.jpg";
+import Aria from "../../assets/works/aria.webp";
+import Betnow from "../../assets/works/betnow.webp";
+import Bimobox from "../../assets/works/bimobox.webp";
+import Choffee from "../../assets/works/choffee.webp";
+import Choffee1 from "../../assets/works/choffee-1.webp";
+import Feel from "../../assets/works/feel.webp";
+import Hexacup from "../../assets/works/hexa.webp";
+import Horror from "../../assets/works/horror.webp";
+import Metro from "../../assets/works/metro.webp";
+import Meyze from "../../assets/works/meyze.webp";
+import Olympus from "../../assets/works/olympus.webp";
+import Olympus1 from "../../assets/works/olympus-1.webp";
+import Sonigiri from "../../assets/works/sonigiri.webp";
+import WWF from "../../assets/works/wwf.webp";
+import Isulia from "../../assets/works/isulia.webp";
+import Isulia1 from "../../assets/works/isulia-1.webp";
+import Koino from "../../assets/works/koino.webp";
+import Koino1 from "../../assets/works/koino-1.webp";
 import Cube from "../../assets/works/cube_low.mp4";
 
 const Projects = () => {
@@ -178,9 +179,16 @@ const Projects = () => {
           {filteredItems.map((item) => (
             <div className="project-item fade-in" key={item.id}>
               <div className="img-container">
-                {item.image && <LazyLoadImage src={item.image} alt={item.title} />}
+                {item.image && (
+                  <LazyLoadImage
+                    src={item.image}
+                    alt={item.title}
+                    effect="blur" // Ajouter cet effet
+                    threshold={100} // Charge 100px avant d'être visible
+                  />
+                )}
                 {item.video && (
-                  <video autoPlay muted loop>
+                  <video autoPlay muted loo loading="lazy" preload="none">
                     <source src={item.video} type="video/mp4" />
                     Votre navigateur ne supporte pas la balise vidéo.
                   </video>

@@ -3,8 +3,8 @@ import "./Cards.scss";
 import { motion, useInView } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 
-import Me from "../../assets/img/me.png";
-import Climb from "../../assets/img/climb1.jpg";
+import Me from "../../assets/img/me.webp";
+import Climb from "../../assets/img/climb1.webp";
 
 // SVG
 import { ReactComponent as Go } from "../../assets/img/go.svg";
@@ -17,18 +17,18 @@ import Drag from "../../assets/img/drag.svg";
 import Map from "../Map/Map";
 
 // Import des images
-import blender from "../../assets/img/blender.png";
-import chatgpt from "../../assets/img/chatgpt.png";
-import cursor from "../../assets/img/cursor.png";
-import figma from "../../assets/img/figma.png";
-import framer from "../../assets/img/framer.png";
-import hotjar from "../../assets/img/hotjar.png";
-import linear from "../../assets/img/linear.png";
-import notion from "../../assets/img/notion.png";
-import slack from "../../assets/img/slack.png";
-import spline from "../../assets/img/spline.png";
-import webflow from "../../assets/img/webflow.png";
-import wordpress from "../../assets/img/wordpress.png";
+import blender from "../../assets/img/blender.webp";
+import chatgpt from "../../assets/img/chatgpt.webp";
+import cursor from "../../assets/img/cursor.webp";
+import figma from "../../assets/img/figma.webp";
+import framer from "../../assets/img/framer.webp";
+import hotjar from "../../assets/img/hotjar.webp";
+import linear from "../../assets/img/linear.webp";
+import notion from "../../assets/img/notion.webp";
+import slack from "../../assets/img/slack.webp";
+import spline from "../../assets/img/spline.webp";
+import webflow from "../../assets/img/webflow.webp";
+import wordpress from "../../assets/img/wordpress.webp";
 
 const Cards = () => {
   const bounceTransition = {

@@ -3,7 +3,7 @@ import "./HeaderMobile.scss";
 import { ReactComponent as Download } from "../../assets/ico/download.svg";
 import { ReactComponent as BurgerMenu } from "../../assets/ico/burger-menu.svg";
 
-import Logo from "../../assets/img/logo.png";
+import Logo from "../../assets/img/logo.webp";
 
 const HeaderMobile = () => {
   const [menuOpen, setMenuOpen] = useState(false);

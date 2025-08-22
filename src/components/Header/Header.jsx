@@ -5,7 +5,7 @@ import About from "../About/About";
 
 import Resume from "../../assets/Resume.pdf";
 
-import Logo from "../../assets/img/logo.png";
+import Logo from "../../assets/img/logo.webp";
 
 const Header = () => {
   const [showAbout, setShowAbout] = useState(false);

@@ -2,9 +2,9 @@ import React from "react";
 import "./Bento.scss";
 // import TestimonialsSimple from "../Testimonials/TestimonialsSimple";
 import Tools from "../../assets/img/tools.svg";
-import Code from "../../assets/img/code.png";
+import Code from "../../assets/img/code.webp";
 import Map from "../Map/Map";
-import Leo from "../../assets/img/leo.jpg";
+import Leo from "../../assets/img/leo.webp";
 import Shape from "../../assets/img/green-shape.svg";
 
 import Linkedin from "../../assets/ico/lk.svg";

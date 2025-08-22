@@ -14,14 +14,14 @@ import { ReactComponent as NewgoLogo } from "../assets/img/newgo-logo.svg";
 import { ReactComponent as HaltoLogo } from "../assets/img/halto-logo.svg";
 import { ReactComponent as FlowcamLogo } from "../assets/img/flowcam-logo.svg";
 
-import MetaImg from "../assets/img/img.png";
+import MetaImg from "../assets/img/img.webp";
 
-import Newgo1 from "../assets/projects/newgo-1.png";
-import Newgo2 from "../assets/projects/newgo-2.png";
-import Halto1 from "../assets/projects/halto-1.png";
-import Halto2 from "../assets/projects/halto-2.png";
-import Flowcam from "../assets/projects/flowcam-1.jpg";
-import Flowcam2 from "../assets/projects/flowcam-2.jpg";
+import Newgo1 from "../assets/projects/newgo-1.webp";
+import Newgo2 from "../assets/projects/newgo-2.webp";
+import Halto1 from "../assets/projects/halto-1.webp";
+import Halto2 from "../assets/projects/halto-2.webp";
+import Flowcam from "../assets/projects/flowcam-1.webp";
+import Flowcam2 from "../assets/projects/flowcam-2.webp";
 
 const Home = () => {
   return (

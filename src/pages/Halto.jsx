@@ -1,13 +1,13 @@
 import Logo from "../assets/img/halto-logo.svg";
-import Img1 from "../assets/halto/1.jpg";
-import Img2 from "../assets/halto/2.jpg";
-import Img3 from "../assets/halto/3.jpg";
-import Img4 from "../assets/halto/4.jpg";
-import Img5 from "../assets/halto/5.jpg";
-import Img6 from "../assets/halto/6.jpg";
+import Img1 from "../assets/halto/1.webp";
+import Img2 from "../assets/halto/2.webp";
+import Img3 from "../assets/halto/3.webp";
+import Img4 from "../assets/halto/4.webp";
+import Img5 from "../assets/halto/5.webp";
+import Img6 from "../assets/halto/6.webp";
 
 import { Helmet } from "react-helmet-async";
-import MetaImg from "../assets/img/img.png";
+import MetaImg from "../assets/img/img.webp";
 
 const Halto = () => {
   return (

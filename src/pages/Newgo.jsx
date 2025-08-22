@@ -1,12 +1,12 @@
 import Logo from "../assets/projects/newgo-logo.svg";
 import ReactCompareImage from "react-compare-image";
-import BeforeImage from "../assets/projects/clubs-before.png";
-import AfterImage from "../assets/projects/clubs-after.png";
-import Buttons from "../assets/projects/buttons.png";
-import Home from "../assets/projects/home.png";
-import Retool from "../assets/projects/retool.png";
+import BeforeImage from "../assets/projects/clubs-before.webp";
+import AfterImage from "../assets/projects/clubs-after.webp";
+import Buttons from "../assets/projects/buttons.webp";
+import Home from "../assets/projects/home.webp";
+import Retool from "../assets/projects/retool.webp";
 import { Helmet } from "react-helmet-async";
-import MetaImg from "../assets/img/img.png";
+import MetaImg from "../assets/img/img.webp";
 
 const Newgo = () => {
   return (

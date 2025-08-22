@@ -1,11 +1,11 @@
 import Logo from "../assets/projects/flow.svg";
 import { Helmet } from "react-helmet-async";
-import MetaImg from "../assets/img/img.png";
+import MetaImg from "../assets/img/img.webp";
 
-import Flowcam1 from "../assets/projects/flowcam-1.png";
-import Flowcam2 from "../assets/projects/flowcam-2.png";
-import Flowcam3 from "../assets/projects/flowcam-3.png";
-import Flowcam4 from "../assets/projects/flowcam-4.png";
+import Flowcam1 from "../assets/projects/flowcam-1.webp";
+import Flowcam2 from "../assets/projects/flowcam-2.webp";
+import Flowcam3 from "../assets/projects/flowcam-3.webp";
+import Flowcam4 from "../assets/projects/flowcam-4.webp";
 
 const Flowcam = () => {
   return (

@@ -2,14 +2,14 @@ import React from "react";
 import "./About.scss";
 
 // Import des images
-import adobe from "../../assets/img/adobe.png";
-import chatgpt from "../../assets/img/chatgpt.png";
-import cursor from "../../assets/img/cursor.png";
-import figma from "../../assets/img/figma.png";
-import framer from "../../assets/img/framer.png";
-import notion from "../../assets/img/notion.png";
-import spline from "../../assets/img/spline.png";
-import webflow from "../../assets/img/webflow.png";
+import adobe from "../../assets/img/adobe.webp";
+import chatgpt from "../../assets/img/chatgpt.webp";
+import cursor from "../../assets/img/cursor.webp";
+import figma from "../../assets/img/figma.webp";
+import framer from "../../assets/img/framer.webp";
+import notion from "../../assets/img/notion.webp";
+import spline from "../../assets/img/spline.webp";
+import webflow from "../../assets/img/webflow.webp";
 
 import { ReactComponent as Close } from "../../assets/ico/x.svg";
 import { ReactComponent as Linkedin } from "../../assets/ico/lk.svg";
